@@ -10,11 +10,11 @@ affiliations: []
 ## The Problem
 
 ### Reusable infrastructure for publishing static knowledge websites across ELIXIR and beyond
-The [ELIXIR Toolkit Theme (ETT)](https://elixir-belgium.github.io/elixir-toolkit-theme/) is a [Jekyll](https://jekyllrb.com) theme designed to support easy deployment of documentation websites, as well as more complex sites requiring a central tool table and linking towards [ELIXIR](https://elixir-europe.org) resources.
-It is intended to provide a modern, lightweight, and flexible theme, with a sidebar to handle sizable amounts of content and a robust search function.
-This theme was initially set-up for [ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) and [ELIXIR Belgium’s RDM Guide](https://rdm.elixir-belgium.org), both resources providing data management guidelines and good practices for the life sciences, but has now been adopted by more than thirty known sites inclduing the [Research Software Quality Toolkit (RSQKit)](https://everse.software/RSQKit/).
+The [ELIXIR Toolkit Theme](https://elixir-belgium.github.io/elixir-toolkit-theme/) is a [Jekyll](https://jekyllrb.com) theme designed to support easy deployment of documentation websites, as well as more complex sites requiring a central tool table and linking towards [ELIXIR](https://elixir-europe.org) resources.
+It is intended to provide a modern, lightweight, and flexible theme, with a sidebar to handle sizeable amounts of content and a robust search function.
+This theme was initially set up for [ELIXIR Research Data Management Kit (RDMkit)](https://rdmkit.elixir-europe.org/) and [ELIXIR Belgium’s RDM Guide](https://rdm.elixir-belgium.org), both resources providing data management guidelines and good practices for the life sciences, but has now been adopted by more than 30 known sites including the [Research Software Quality Toolkit (RSQKit)](https://everse.software/RSQKit/).
 
-The theme provides layouts, navigation, styling, search, and other common features used to publish a feature rich Jekyll-based static website.
+The theme provides layouts, navigation, styling, search, and other common features used to publish a feature-rich Jekyll-based static website.
 Being part of the website infrastructure developed for the RDMkit, requirements were added in response to the practical needs of a large, community-maintained knowledge resource.
 Drawing on experience with existing Jekyll themes, including the Jekyll Documentation Theme and Just the Docs, the developers found that no available option provided the required combination of flexible navigation, search, structured resource information, contributor attribution, branding, and maintainability.
 The theme was therefore developed alongside the websites it powered.
@@ -24,7 +24,7 @@ Rather than independently rebuilding the same publishing components, they chose 
 The theme was consequently elevated to a software product provided as an ELIXIR Belgium Node Service on its own, independently versioned, and distributed for use by other documentation and knowledge-base websites.
 Today, a quick way to use the theme is to reference it as a remote theme for {% tool "github-pages" %} but it can also be installed, configured, and deployed anywhere using Ruby and Jekyll.
 
-The theme now provides a configurable foundation for more than thirty known sites, including RSQKit, [WorkflowHub website](https://about.workflowhub.eu/), [FAIRDOM](https://fair-dom.org/), the [Data Stewardship Handbook](https://elixir-europe.github.io/ds-handbook/), and resources operated by ELIXIR Nodes and the Australian BioCommons.
+The theme now provides a configurable foundation for more than 30 known sites, including RSQKit, [WorkflowHub website](https://about.workflowhub.eu/), [FAIRDOM](https://fair-dom.org/), the [Data Stewardship Handbook](https://elixir-europe.github.io/ds-handbook/), and resources operated by ELIXIR Nodes and the Australian BioCommons.
 
 ## User Community
 
@@ -32,7 +32,7 @@ The theme now provides a configurable foundation for more than thirty known site
 
 The theme is developed and maintained primarily by ELIXIR Belgium, with Bert Droesbeke as its principal maintainer. Contributions, requirements, and bug reports also come from ELIXIR Nodes, international partners, and projects that use the theme.
 
-The user community includes three overlapping groups:
+The user community includes three overlapping groups.
 
 * **Content authors and editors:** Data stewards, researchers, trainers, and project staff create and update pages using Markdown and YAML. They benefit from structured templates, contributor attribution, resource records, and navigation systems without needing to edit the underlying layouts.
 * **Site maintainers:** Research software engineers and technically experienced project members configure branding, navigation, deployment, metadata, and integrations. They generally need familiarity with Git and GitHub, but do not need to maintain a complete web application.
@@ -59,9 +59,9 @@ As of July 2026, the latest release is version 6.1.0, and the repository records
 
 The principal capabilities can be grouped into three areas:
 
-* **Publishing and navigation:** Responsive layouts, configurable sidebars and top navigation, multiple website sections, custom branding, full-text search, tables of contents, and page tagging.
-* **Knowledge-resource management:** Central YAML records for tools and resources, contributor and editor attribution, affiliations, and reusable links between pages and external resources.
-* **Discovery and integration:** Sitemap generation, schema.org and other metadata attributes, analytics integrations, and links to ELIXIR services such as bio.tools, FAIRsharing, TeSS, RDMkit, the FAIR Cookbook, and the Data Stewardship Wizard.
+* **Publishing and navigation:** Responsive layouts, configurable sidebars and top navigation, multiple website sections, custom branding, full-text search, tables of contents, and page tagging
+* **Knowledge-resource management:** Central YAML records for tools and resources, contributor and editor attribution, affiliations, and reusable links between pages and external resources
+* **Discovery and integration:** Sitemap generation, schema.org and other metadata attributes, analytics integrations, and links to ELIXIR services such as bio.tools, FAIRsharing, TeSS, RDMkit, the FAIR Cookbook, and the Data Stewardship Wizard
 
 The central tools and resources table is particularly important for larger knowledge sites.
 Instead of repeatedly entering information about a tool on individual pages, editors can define a structured record once and refer to it throughout the website.
@@ -71,10 +71,10 @@ This supports more consistent names, identifiers, descriptions, and external lin
 
 The software relies on a compact stack of established web technologies:
 
-* **Core:** Jekyll, Ruby, Liquid templates, Markdown, YAML, SCSS, HTML, and {% tool "javascript" %}.
-* **Interface:** Bootstrap 5 provides the responsive layout, Lunr.js powers client-side search, and DataTables supports searchable and sortable resource tables.
-* **Extension:** The separate `elixir-toolkit-theme-plugins` Ruby gem adds improved tool tagging and deployment-related branch detection.
-* **Integration:** `jekyll-sitemap`, schema.org metadata, analytics services, and links to relevant ELIXIR registries and knowledge resources.
+* **Core:** Jekyll, Ruby, Liquid templates, Markdown, YAML, SCSS, HTML, and {% tool "javascript" %}
+* **Interface:** Bootstrap 5 provides the responsive layout, Lunr.js powers client-side search, and DataTables supports searchable and sortable resource tables
+* **Extension:** The separate `elixir-toolkit-theme-plugins` Ruby gem adds improved tool tagging and deployment-related branch detection
+* **Integration:** `jekyll-sitemap`, schema.org metadata, analytics services, and links to relevant ELIXIR registries and knowledge resources
 
 Adopters primarily need to understand Markdown, YAML configuration, and Git-based workflows.
 Knowledge of Liquid, SCSS, and {% tool "javascript" %} becomes necessary only when contributing to or substantially customising the shared theme.
@@ -98,7 +98,7 @@ External and substantial changes generally pass through pull requests, while sma
 Major releases are used for potentially breaking changes, which are explained in release notes.
 * **Adopter feedback:** Issues found in adopter sites can lead to changes in the shared theme, allowing a fix or feature developed for one project to benefit the wider community.
 
-Accessibility is assessed through community review using WCAG guidance, W3C and UK government checklists, and online accessibility tools.
+Accessibility is assessed through community review using Web Content Accessibility Guidelines (WCAG) guidance, World Wide Web Consortium (W3C) and UK government checklists, and online accessibility tools.
 The project aims to meet WCAG 2.1 AA and states that its documentation site is compliant as far as its maintainers can ascertain, but it has not documented an independent specialist audit.
 
 These practices provide a lightweight mechanism for maintaining shared infrastructure.
@@ -117,11 +117,11 @@ Improvements can instead be received by updating the versioned theme dependency.
 
 A typical adoption journey is:
 
-1. Create a repository from the example project.
-2. Enable deployment through GitHub Actions or GitHub Pages.
-3. Replace the example content and configuration.
-4. Configure navigation, branding, contributors, and resources.
-5. Pin a theme version and test future upgrades before adopting them.
+1. Create a repository from the example project
+2. Enable deployment through GitHub Actions or GitHub Pages
+3. Replace the example content and configuration
+4. Configure navigation, branding, contributors, and resources
+5. Pin a theme version and test future upgrades before adopting them
 
 New content contributors can work mainly in Markdown and YAML.
 Developers wishing to change the shared components need to understand Jekyll, Liquid, SCSS, JavaScript, and the relationship between the theme and its plugin package.
@@ -138,12 +138,12 @@ The example repository and documentation reduce this complexity, but a short arc
 
 The project uses a focused set of tools rather than a complex development platform:
 
-* **{% tool "github" %} and {% tool "git" %}:** Source control, issues, pull requests, documentation, and release management.
-* **{% tool "github_actions" %}:** Automated builds, deployment, maintenance workflows, and publication of releases.
-* **Ruby, {% tool "bundler" %}, and RubyGems:** Dependency management, local development, packaging, and distribution.
-* **Jekyll:** Generation of static HTML websites from Markdown, YAML, and templates.
-* **{% tool "docker" %}:** An alternative local development environment for contributors who do not want to manage a Ruby installation.
-* **{% tool "zenodo" %}:** Archival of versioned releases and assignment of persistent identifiers.
+* **{% tool "github" %} and {% tool "git" %}:** Source control, issues, pull requests, documentation, and release management
+* **{% tool "github_actions" %}:** Automated builds, deployment, maintenance workflows, and publication of releases
+* **Ruby, {% tool "bundler" %}, and RubyGems:** Dependency management, local development, packaging, and distribution
+* **Jekyll:** Generation of static HTML websites from Markdown, YAML, and templates
+* **{% tool "docker" %}:** An alternative local development environment for contributors who do not want to manage a Ruby installation
+* **{% tool "zenodo" %}:** Archival of versioned releases and assignment of persistent identifiers
 
 The theme can be consumed either as a remote GitHub theme or as a Ruby gem.
 GitHub Pages is the quickest deployment route but has restricted plugin support.
@@ -181,10 +181,10 @@ This is a development target and community assessment rather than formal certifi
 
 Documentation is provided through several complementary entry points:
 
-* **Repository README:** Introduces the theme, its features, dependencies, installation methods, deployment choices, known users, and licence.
-* **Documentation website:** Covers navigation, configuration, branding, page mechanics, website sections, tools and resources, metadata, and accessibility.
-* **Example repository:** Provides a minimal working implementation that can be copied and adapted.
-* **Markdown guidance:** Supports content contributors who do not need to work with templates or application code.
+* **Repository README:** Introduces the theme, its features, dependencies, installation methods, deployment choices, known users, and licence
+* **Documentation website:** Covers navigation, configuration, branding, page mechanics, website sections, tools and resources, metadata, and accessibility
+* **Example repository:** Provides a minimal working implementation that can be copied and adapted
+* **Markdown guidance:** Supports content contributors who do not need to work with templates or application code
 
 The documentation website is itself built using the theme, giving users a live example of its navigation, layout, metadata, and content features.
 
@@ -237,18 +237,3 @@ The project is shaped by its source repositories, documentation, the RDMkit use 
 * **Core framework:** [Jekyll](https://jekyllrb.com/) and [Bootstrap](https://getbootstrap.com/)
 * **Accessibility standard:** [Web Content Accessibility Guidelines 2.1](https://www.w3.org/TR/WCAG21/)
 * **Structured metadata:** [Schema.org](https://schema.org/) and [Bioschemas](https://bioschemas.org/)
-
-**ELIXIR resources integrated with the theme:**
-
-* bio.tools:
-  https://bio.tools
-* FAIRsharing:
-  https://fairsharing.org
-* FAIR Cookbook:
-  https://faircookbook.elixir-europe.org
-* RDMkit:
-  https://rdmkit.elixir-europe.org
-* TeSS:
-  https://tess.elixir-europe.org
-* Data Stewardship Wizard:
-  https://ds-wizard.org
